@@ -35,7 +35,7 @@ class Order {
     public void listProducts() {
         System.out.println("Products in Order #" + orderId + ":");
         for (Product product : products) {
-            System.out.println(" - " + product.getName() + " ($" + product.getPrice() + ")");
+            System.out.println(" - " + product.getName() + " (Rs." + product.getPrice() + ")");
         }
     }
 
@@ -68,7 +68,7 @@ class EcommerceCustomer {
     public void listOrders() {
         System.out.println(name + "'s Orders:");
         for (Order order : orders) {
-            System.out.println("Order ID: " + order.getOrderId() + " - Total: $" + order.calculateTotal());
+            System.out.println("Order ID: " + order.getOrderId() + " - Total: Rs." + order.calculateTotal());
         }
     }
 }
